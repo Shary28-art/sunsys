@@ -26,6 +26,8 @@ export default function Footer() {
           <p>© 2025 SunSys | Designed with 🌿 sustainability in mind | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
         </div>
       </div>
+
+      
     </footer>
   );
 }
