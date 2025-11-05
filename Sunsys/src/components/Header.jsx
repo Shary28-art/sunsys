@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -33,11 +35,13 @@ export default function Header() {
           </div>
 
           <ul className={`nav-links ${mobileOpen ? 'active' : ''}`}>
-            <li><a href="index.html" className="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contacts.html">Contact</a></li>
+            <li><Link to="/" className="active">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/projects">Our Projects</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/enquiry">Enquiry</Link></li>
+            <li><Link to="/team">Our Team</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
           </ul>
 
           <div className="mobile-menu" onClick={() => setMobileOpen(v => !v)}>
