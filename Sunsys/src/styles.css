@@ -727,7 +727,7 @@ footer {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #111827;
+  color: orangered;
   letter-spacing: -0.025em;
 }
 
@@ -818,7 +818,7 @@ footer {
 .platform-button {
   margin-top: 1.5rem;
   padding: 0.5rem 1.5rem;
-  background-color: #2563eb;
+  background-color: rgb(255, 106, 0);
   color: white;
   border-radius: 0.5rem;
   border: none;
@@ -829,7 +829,7 @@ footer {
 }
 
 .platform-button:hover {
-  background-color: #1d4ed8;
+  background-color: rgb(255, 106, 0);
 }
 
 .platform-button:focus {
