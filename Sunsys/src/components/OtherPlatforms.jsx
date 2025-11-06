@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+import React from "react";
+ // Make sure to import your CSS file
+>>>>>>> 846982e492ba40b34749ed82bfd566d12fdebb5f
 
 const OtherPlatforms = () => {
   const platforms = [
@@ -35,28 +40,36 @@ const OtherPlatforms = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50" id="other-platforms">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-16 text-gray-900 text-center">
-          Our Other Platforms
-        </h2>
+    <section className="platforms-section" id="other-platforms">
+      <div className="platforms-container">
+        <div className="platforms-header">
+          <h2 className="platforms-title">
+            Our Other Platforms
+          </h2>
+          <p className="platforms-subtitle">
+            Discover our ecosystem of platforms designed to empower and connect
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <div className="platforms-grid">
           {platforms.map((platform, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md rounded-3xl p-8 flex flex-col items-center hover:shadow-xl transition duration-300 w-full max-w-sm"
-            >
-              <div className="mb-6">
+            <div key={index} className="platform-card">
+              <div className="platform-logo-container">
                 <img
                   src={platform.logo}
                   alt={platform.name}
-                  className="w-32 h-32 object-contain"
+                  className="platform-logo"
                 />
               </div>
-              <p className="text-gray-700 text-base text-center leading-relaxed">
+              <h3 className="platform-name">
+                {platform.name}
+              </h3>
+              <p className="platform-description">
                 {platform.description}
               </p>
+              <button className="platform-button">
+                Learn More
+              </button>
             </div>
           ))}
         </div>

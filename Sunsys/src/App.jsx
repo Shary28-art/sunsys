@@ -11,6 +11,7 @@ import Stats from './components/Stats';
 import OtherPlatforms from './components/OtherPlatforms';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import OtherPlatforms from './components/OtherPlatforms';
 
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
             <AboutPreview />
             <Stats />
             <CTA />
+            <OtherPlatforms />
           </main>
         } />
         <Route path="/about" element={<AboutUs />} />
