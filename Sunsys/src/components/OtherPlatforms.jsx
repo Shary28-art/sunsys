@@ -29,58 +29,48 @@ const OtherPlatforms = () => {
         "Bridging the gap between potential and opportunity for every woman.",
       logo: "https://ik.imagekit.io/zpx7owisl/IMG-20251022-WA0051.jpg",
       href: "https://kaushalsaathi.com/",
-    },
-    {
-      name: "Sunsys Techsol",
-      description:
-        "Your trusted partner in renewable and affordable solar energy.",
-      logo: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=170,fit=crop,q=95/mnlJbxPDb0ck5pbk/head-AGBbyZWnX9inNWoo.png",
-      href: "https://sunsysglobal.com/",
-    },
+    }
+    
   ];
 
   return (
-    <section className="platforms-section" id="other-platforms">
-      <div className="platforms-container">
-        <div className="platforms-header">
-          <h2
-            className="platforms-title"
-            style={{ textAlign: "center", width: "100%" }}
-          >
+    <section className="py-5 bg-light" id="other-platforms">
+      <div className="container">
+        <div className="text-center mb-5">
+          <h2 className="display-5 fw-bold text-primary mb-3">
             Our Other Platforms
           </h2>
-          <p
-            className="platforms-subtitle"
-            style={{ textAlign: "center", maxWidth: 800, margin: "0.5rem auto 2rem" }}
-          >
+          <p className="lead text-muted mx-auto" style={{ maxWidth: '700px' }}>
             Discover our ecosystem of platforms designed to empower and connect.
           </p>
         </div>
 
-        <div className="platforms-grid">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           {platforms.map((platform, index) => (
-            <div key={index} className="platform-card">
-              <div className="platform-logo-container">
-                <img
-                  src={platform.logo}
-                  alt={platform.name}
-                  className="platform-logo"
-                />
+            <div key={index} className="col">
+              <div className="card h-100 shadow-sm hover-shadow transition">
+                <div className="text-center p-4">
+                  <img
+                    src={platform.logo}
+                    alt={platform.name}
+                    className="img-fluid mb-3"
+                    style={{ height: '120px', objectFit: 'contain' }}
+                  />
+                  <h3 className="h5 text-primary">{platform.name}</h3>
+                  <p className="text-muted small mb-4">
+                    {platform.description}
+                  </p>
+                  <a
+                    href={platform.href || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary rounded-pill px-4"
+                    aria-label={`Learn more about ${platform.name}`}
+                  >
+                    Learn More
+                  </a>
+                </div>
               </div>
-
-              <h3 className="platform-name">{platform.name}</h3>
-              <p className="platform-description">{platform.description}</p>
-
-              <a
-                href={platform.href || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="platform-button"
-                aria-label={`Learn more about ${platform.name}`}
-                style={{ display: "inline-block", textAlign: "center" }}
-              >
-                Learn More
-              </a>
             </div>
           ))}
         </div>
@@ -90,3 +80,11 @@ const OtherPlatforms = () => {
 };
 
 export default OtherPlatforms;
+
+
+
+
+
+
+
+
