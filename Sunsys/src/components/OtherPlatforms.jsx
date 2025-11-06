@@ -34,8 +34,8 @@ const OtherPlatforms = () => {
       name: "Sunsys Techsol",
       description:
         "Your trusted partner in renewable and affordable solar energy.",
-      logo: "https://via.placeholder.com/150x150?text=Sunsys",
-      href: "https://sunsys.tech",
+      logo: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=170,fit=crop,q=95/mnlJbxPDb0ck5pbk/head-AGBbyZWnX9inNWoo.png",
+      href: "https://sunsysglobal.com/",
     },
   ];
 
