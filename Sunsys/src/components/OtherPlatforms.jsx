@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import React from 'react';
-=======
 import React from "react";
- // Make sure to import your CSS file
->>>>>>> 846982e492ba40b34749ed82bfd566d12fdebb5f
 
 const OtherPlatforms = () => {
   const platforms = [
