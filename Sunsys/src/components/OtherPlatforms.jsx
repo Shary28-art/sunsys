@@ -80,11 +80,3 @@ const OtherPlatforms = () => {
 };
 
 export default OtherPlatforms;
-
-
-
-
-
-
-
-

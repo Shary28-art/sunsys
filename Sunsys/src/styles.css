@@ -888,6 +888,25 @@ footer {
   }
 }
 
+:root {
+  --bs-primary: #FF6B35;
+  --bs-primary-rgb: 255, 107, 53;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+  background-color: #E55A2B;
+  border-color: #E55A2B;
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
 /* ========================================================= */
 /* === Enquiry Section Styles === */
 /* ========================================================= */
