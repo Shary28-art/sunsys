@@ -8,6 +8,7 @@ import AboutUs from './Pages/AboutUs';
 import ContactUs from './Pages/ContactUs';
 import Enquiry from './Pages/Enquiry';
 import Stats from './components/Stats';
+import OtherPlatforms from './components/OtherPlatforms';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 

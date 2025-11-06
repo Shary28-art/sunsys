@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from 'react';
 
 const OtherPlatforms = () => {
   const platforms = [
@@ -65,4 +65,4 @@ const OtherPlatforms = () => {
   );
 };
 
-export default OtherPlatforms;*/
+export default OtherPlatforms;
