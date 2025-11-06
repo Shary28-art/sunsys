@@ -20,15 +20,15 @@ const OtherPlatforms = () => {
       name: "TaskSaathi",
       description:
         "Task Saathi - Making work effortless, organized, and stress-free.",
-      logo: "https://via.placeholder.com/150x150?text=Task",
-      href: "https://example.com/tasksaathi",
+      logo: "https://tasksaathi.com/WhatsApp%20Image%202025-09-23%20at%2017.57.08_ef40957d.jpg",
+      href: "https://tasksaathi.com/",
     },
     {
       name: "KaushalSaathi",
       description:
         "Bridging the gap between potential and opportunity for every woman.",
-      logo: "https://via.placeholder.com/150x150?text=Kaushal",
-      href: "https://example.com/kaushalsaathi",
+      logo: "https://ik.imagekit.io/zpx7owisl/IMG-20251022-WA0051.jpg",
+      href: "https://kaushalsaathi.com/",
     },
     {
       name: "Sunsys Techsol",
