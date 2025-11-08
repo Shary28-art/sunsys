@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+
+// you need to sign up at emailjs.com and get your own service ID, template ID and user ID
 
 export default function Enquiry() {
   const [form, setForm] = useState({
@@ -32,9 +35,15 @@ export default function Enquiry() {
     }
 
     // replace with real API call
-    console.log('Enquiry submitted', form);
-    setStatus({ type: 'success', text: 'Inquiry sent. Our solar experts will contact you shortly.' });
-    setForm({ name: '', company: '', location: '', contact: '', email: '', projectType: '', message: '' });
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form, 'YOUR_USER_ID')
+      .then((response) => {
+        console.log('Email sent successfully!', response.status, response.text);
+        setStatus({ type: 'success', text: 'Inquiry sent. Our solar experts will contact you shortly.' });
+        setForm({ name: '', company: '', location: '', contact: '', email: '', projectType: '', message: '' });
+      }, (err) => {
+        console.error('Failed to send email. Error:', err);
+        setStatus({ type: 'error', text: 'Failed to send inquiry. Please try again later.' });
+      });
   };
 
   return (

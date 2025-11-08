@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com'; // Import EmailJS
+
+// you need to sign up at emailjs.com and get your own service ID, template ID and user ID
 
 export default function ContactUs() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
@@ -21,10 +24,16 @@ export default function ContactUs() {
       return;
     }
 
-    // TODO: replace with real API call
-    console.log('Contact form submitted', form);
-    setStatus({ type: 'success', text: 'Thank you — your message has been sent.' });
-    setForm({ name: '', email: '', phone: '', message: '' });
+    // Send email using EmailJS
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form, 'YOUR_USER_ID')
+      .then((response) => {
+        console.log('Email sent successfully!', response.status, response.text);
+        setStatus({ type: 'success', text: 'Thank you — your message has been sent.' });
+        setForm({ name: '', email: '', phone: '', message: '' });
+      }, (err) => {
+        console.error('Failed to send email. Error:', err);
+        setStatus({ type: 'error', text: 'Failed to send message. Please try again later.' });
+      });
   };
 
   return (
